@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="MetContro">
+	<head>
+		<title>Sujetador1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Sujetador configuracion A</strong></a>
+									<ul class="icons">										
+																
+										<li><a href="#" class="icon fa fa-home"><span class="label">HOME</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+							
+
+							<!-- Section -->
+								
+
+							<!-- Section -->
+								<section>
+									
+									<div class="posts" ng-controller="MC">
+										<article>
+											
+											<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\&quot; version=\&quot;8.0.4\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;7e0a89b8-554c-2b80-1dc8-d5c74ca68de4\&quot; name=\&quot;Page-1\&quot;&gt;7VpLc6M4EP41PjoFCDAcx048c5itSm22ZmdPKYFkWzOAXEJO7Pn1K4F4Chz8SjIZ+5CgltR69NefWg0jMIu3nxlcr/6iCEcjy0DbEbgdWZY3scRfKdjlAtv0csGSEZSLzErwQH5hJTSUdEMQThsNOaURJ+umMKRJgkPekEHG6HOz2YJGzVHXcIk1wUMII136L0F8pZZlTSr5F0yWq2Jk0/XzmgCGP5eMbhI13sgCi+yXV8ew0KUWmq4gos81EbgbgRmjlOdP8XaGI7m1xbbl/eY9teW8GU74kA6WjRZ4EXiha4YQw8nYBLmKJxhtcLGGbKZ8V+zOgkTRjEaUiWJCEyGdPmHGidi/rzDA0T1NCSc0EdUB5ZzGokG5UEMUEExXGKkCjMhSNg3FlLFQOa2rr/YPTFc8joTIrA33SfXldC3H4Iz+LA0G8lHXctLxdilxeoMjgRYme94gIkCb5v/KvrVh3Zl3NxXbNhU9ERFzq9UB4Pvzet0tYUJxvuSEMjn+lFEOlWjsy4XqtlHmkqvB25pI2eozpjHmbCeaqFprovxI+ZVZlJ8rlDpOLlrVAGq5yjeUXyxLzRU2xIOCx1CoOBoyMBJupIpyG+iSJjC6q6TTzDdK24c0JqF6/rGJ10VfhaqaxfGW8O+qpXz+Tz7fOKp0jxkRC5LwyVo00JZyyPgnyQqV5kw2J3KxucoEtVoISa3+B+Z8p3gKbjgVomp9X6mEXzZNHUahh4NFJzhbOEcQe4twH05SumFhwVBh4NoAen4wQZ7no7GiJmmBvUhiOBKwfGoSXRcuVNd7SsQ0SgSaE6OJQGA0VYiNXWKuerXQVU5jEOD6llijpm+yeaLBsI+NYoJQhsLj2ai0Ur+l9/BUNYFDqComaSi2BiaYbtKbmCZUFh8DyMUUdw2nMltOFckdmJaHUou1FzThcxiTSBrzG2YIJlCJFdbFuZ2Xaws1DABcV8ojsv6iBkUdDLguvPJhDUOSLOtzqlklwgtejKps2HGOHcyVpu00keoZOlcaOlc6Rr9PHM2VVgd2qYZbsTLeBBDDKfkFg6yB3Lu19KtsYs505NxKwAo2SpWxavhVm9pzUOb2+CejrbHdY/IeZHQi4cy2s+0my1gG0Gxnd9jOOoPtRMDhuIFtm9AIJ5MAj/UA6HrM9UZLLx5zZex0IvkMOiVdwzXEMRJMhE1tFwWFLd/rKakr8l9QlK9WUySsDHe1Zoo3TjuQXWwFBkDICMPQDMLF2NVI7e8rp/VyWsFhhSn9icZp4LU4zb1y2jvkNAEutvtebJss1PZKFtubdRwJup0kaBk5KfVEMHli4OxMCczjmLKf4LrHsUH3OH3ECwx3X3vxkM+gZzSjNVpxT3+Bto8gZc21J2/g2uYg1z4Y3n8yF5zk2nVPfqtMQdsHLHuYD5zq2cDY79nt2KzVvunZ53BI++qQH9ohL+1I1pF3gMMVnS93pzmBaWl3Bd0tNLDUkN2C3pvDoYnj48ExMBt1KoYm3eHMwRgCzguKLokh/b75QDQUvY8LpzP4ZtmLxF5MHfC+yG/nQPU82qXunFpsYmrWG1kujOVeJkG6zlZsDBK1y9f0/0dL/zden8rMfWFmDfsdHtLvDp7ZDElNPQVzqVcCfanIfQfi7/dWPYTS1pyytHp8NM+BxH2Eeuwr+v4w4hxgs1r5viLTUQOb2wE2+xJgc/6A6EvLZw2w1etEX+1kkkYog6OvlqLi7nqB6KsvtfCx+EqGhmlGV8XTo3VptqqdbP5+dzoDC4HWnc8ydBbyXi0C1EPA8J3G7+d5YXTaAWLbDdN5+rde1qtZTo9Wvl1N12864DfPfkf3ukt9v6DbbsAnnb8fc6eiJ4we85MzvYHhY5EY72NvMZe5+AFwOoXnI1CGMGtU2zPf745H53Pfz0Y+KB4tNZ4Bk6bdytx0fQ8FOmIg5wKYtDr45EonvXTiNOlECDTTnSmNI4rV1+d52Fh94Q/u/gc=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+											
+                                            
+                                            <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+											
+											<div>
+       
+        
+        
+        <p>V in: <input type="number" ng-model="num1" ng-click="sumar()" ng-keyup="sumar()"></p>
+        <p>V : <input type="number" ng-model="num2" ng-click="sumar()" ng-keyup="sumar()"></p>
+        
+       
+        
+        
+    </div>
+                                   
+     <script type="text/javascript">
+        
+    var miApp=angular.module('MetContro',[]);
+   
+    miApp.controller('MC',function($scope){
+                 
+        $scope.num1=0;         
+        $scope.num2=0; 
+        $scope.num3=0;
+        $scope.conducesi='SI';
+        $scope.conduceno='NO';
+        
+        
+        $scope.sumar=function()
+        {
+                    
+           
+            
+            
+            
+                        
+            if ($scope.num1<=$scope.num2+0.7)
+            {
+                
+               
+             $scope.vout=0;
+                 $scope.conds=$scope.conduceno;
+                                                            
+                    
+            }
+            
+         
+            if ($scope.num1>$scope.num2+0.7)
+            {
+                
+                //1er ciclo -
+                $scope.vcap=$scope.num1-$scope.num2-0.7;
+                
+                //cilco +
+                $scope.vout11=$scope.num1-0.7;
+                $scope.vout12=($scope.num1*2)-0.7-$scope.num2;
+                
+                
+                //cilco -
+                $scope.vout21=-0.7-$scope.num2;
+                $scope.vout22=$scope.num1-0.7-$scope.num2;
+                
+                
+                
+                $scope.conds=$scope.conducesi;
+            }
+            
+            else 
+            {
+                
+                
+            }
+             
+            
+        
+           // $scope.sig="+";
+           
+           // $scope.res=$scope.resultado;
+            
+        }
+        
+     
+         
+    });
+        
+    </script>
+                                    
+                                    
+										</article>
+										<article >
+											<h4>Ciclo (+)</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Diodo</th>
+																	<th>Conduccion</th>
+																	<th>Vc</th>
+																	
+																
+																</tr>
+															</thead>
+															<tbody>
+																
+																<tr>
+																	<td>Silicio</td>
+																	<td>{{conds}} </td>
+																	
+																	<td>{{vcap | number:5}} V</td>
+																	
+																	
+																</tr>
+																
+															</tbody>
+															
+														</table>
+													</div>
+													
+													
+													
+													
+													
+													<h4>Ciclo (-)</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Si V in=0</th>
+																
+																	<th>Si V in ={{num1}}</th>
+																	
+																
+																</tr>
+															</thead>
+															<tbody>
+																
+																<tr>
+																	<td>{{vout11 | number:5}} V</td>
+																
+																	
+																	<td>{{vout12 | number:5}} V</td>
+																	
+																	
+																</tr>
+																
+															</tbody>
+															
+														</table>
+													</div>
+													
+													
+													
+													
+													
+													<h4>Ciclo (+)</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Si V in= -{{num1}}</th>
+																
+																	<th>Si V in =0</th>
+																	
+																
+																</tr>
+															</thead>
+															<tbody>
+																
+																<tr>
+																	<td>{{vout21 | number:5}} V</td>
+															
+																	<td>{{vout22 | number:5}} V</td>
+																	
+																	
+																</tr>
+																
+															</tbody>
+															
+														</table>
+													</div>
+													
+													
+													
+													
+													
+													
+													
+										</article>
+										
+										
+									
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>CIRCUITOS</h2>
+									</header>
+									<ul>
+										<li ><a href="index.html" class="icon fa fa-diamond"> Homepage</a></li>
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond"> Básicos </a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												<section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/index.jpg" alt="" /></a>
+											<p>Conducción del diodo</p>
+										</article>
+										
+									</div>
+									
+								            </section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Diodos</a></span>
+											<ul> 
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="diodo24.html" class="image"><img src="images/diodo24.jpg" alt="" /></a>
+											<p>Diodo y Resistencia</p>
+										</article>
+										<article>
+											<a href="diodo210.html" class="image"><img src="images/diodo210.jpg" alt="" /></a>
+											<p>diodos en paralelo </p>
+										</article>
+										<article>
+											<a href="didodo213.html" class="image"><img src="images/diodo213.jpg" alt="" /></a>
+											<p>Analisis de corrientes </p>
+										</article>
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Sujetadores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="sujetador1.html" class="image"><img src="images/sujetador1.jpg" alt="" /></a>
+											<p>Sujetador 1</p>
+										</article>
+										<article>
+											<a href="sujetador2.html" class="image"><img src="images/sujetador2.jpg" alt="" /></a>
+											<p>Sujetador 2 </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Recortadores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="recortador1.html" class="image"><img src="images/recortador1.jpg" alt="" /></a>
+											<p>Recortador simple</p>
+										</article>
+										<article>
+											<a href="recortador2.html" class="image"><img src="images/recortador2.jpg" alt="" /></a>
+											<p>recortador con fuente dc </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Transistores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="transistor1.html" class="image"><img src="images/transistor1.jpg" alt="" /></a>
+											<p>polarizacion fija </p>
+										</article>
+										<article>
+											<a href="transistor2.html" class="image"><img src="images/transistor2.jpg" alt="" /></a>
+											<p>polarizacion emisor </p>
+										</article>
+										<article>
+											<a href="transistor3.html" class="image"><img src="images/transistor3.jpg" alt="" /></a>
+											<p>Divisor de voltaje</p>
+										</article>
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Amplificadores Op.</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="sumador.html" class="image"><img src="images/sumador.jpg" alt="" /></a>
+											<p>sumador </p>
+										</article>
+										<article>
+											<a href="restador.html" class="image"><img src="images/restador.jpg" alt="" /></a>
+											<p>restador </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+					
+										
+										
+									</ul>
+								</nav>
+
+
+							
+
+							
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; UDLA. All rights reserved.  Design: HTML5.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

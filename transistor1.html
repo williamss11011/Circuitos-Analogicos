@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="MetContro">
+	<head>
+		<title>Transistores: Polarizacion Fija</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Transistores: Polarizacion Fija</strong></a>
+									<ul class="icons">										
+																
+										<li><a href="#" class="icon fa fa-home"><span class="label">HOME</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+							
+
+							<!-- Section -->
+								
+
+							<!-- Section -->
+								<section>
+									
+									<div class="posts" ng-controller="MC">
+										<article>
+											
+											<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\&quot; version=\&quot;8.0.4\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;7e0a89b8-554c-2b80-1dc8-d5c74ca68de4\&quot; name=\&quot;Page-1\&quot;&gt;7Vpbc9o6EP41PCZjW77xWEhoH3pmMu2ZnvYpI8uLcWssRoiE9NcfCUu+SBjIxXSaJA8ZabW67refVmtGaLrcfmR4tfiHplCMPCfdjtDVyPPiyBP/peChEvhhVAkylqeVyG0EX/PfoISOkm7yFNYdRU5pwfNVV0hoWQLhHRlmjN531ea06M66whlYgq8EF7b0vzzlC7UtL2rknyDPFnpmNxxXLQkmvzJGN6Wab+Sh+e6val5iPZba6HqBU3rfEqHrEZoySnlVWm6nUMij1cdW9Zv1tNbrZlDyUzp4fjqHeRKT0CUYcHThBmph/EEfBqTibFSVMr6gGS1xcd1IJ7sNgxzSETVClzlR5Z+b5Ur3LWkplRd8WYiaK4r17qXqmmPGP0jjNbo72SwvCqUDZWpoCEmr/Sdw/qDghDecClGz4s+UrvTEnNFfMKUFZbs9opDEkMzrFm10JCRzMXxLM8UQz8X2JvZRq9OX59USqIP/CHQJnD0IBQYF5vldF2tYQTar9equNzQXU3iO8i43UuBRzuUipzuEOLQMuOrVNv6xgSJjoDXdMALWQKLQ2k8j2mHrRJxpV7rDxQa0r4QFlyZY4VKUM1keTa9Hk7pFzNJpNJHKYcu7CGOwzn/jZKcgAbKSe9ntLpiMgishkTBZV4iRHXCRZ6UoFzCXQ90B47nghQ9KzCWE5ApJXmb/7vB04UuQ0JIr3Lmxqs/wMi/k0X4DluISK3ELS46DUBjq7mofe3xYieRiYHsQWqoVxV3LemNVv2/YTKNm0SIyz+kHY8f6B0wtCC8IE993sUOiKIEL720yyjS+nsxOYRSExuPZ7DBoTGztAxFsc/5db0uUf8jyZaBqN8ByYUtgSqMXZZXTV6LQCR2XJEkkbOqHaXIR/mUUh4IjA/VQnMAEfmipKd7oXXDfPI3PVCM+lT9D8BIHpalDCHETMteGaNHnl+k7H/byYWiYJ44sPvTPxYfROx+ehw9LYanvaj27SosRZdWkxAEINEqIE3hB6gMJ/DSGC/2a2fFXj453HpL1DJJF7jDcaJK5nmcvN1q9jUgGnXgTPIFjLUf1z+ioGnvuSdh7NLTfMg/0OurgDjZ+WvDx+IFezgn6Ir7OO83wCh0UfMYJFDcieuA5lcFBQjmnSxN9KV4vagfR4QURtpFgNTGgkicdV+mJQSw4iVlXcoXLbSaTVJdQAOFM9ryUYdCaU7auS7fCiJNCbmBSp3D0OpQDnADD4AAMGeVYHczYOegZLxHwuAZixsgKeOKBAh4LQq5nYegbIe/Rap/xxPO9Y7zYtWwXDGS7vnjldbk/Z7jUBFCuytumfuv204BYz0z8IfR8Luj3fbHWNAej12zmOK22q5yJrVSHXMpbt+YMC2N7kNjPGY6RNIrspFHk2riLh8CdTRmvAHd/w7XzLAjVgUl97YzPdu1YEPJfI4TWoicubqvIcX25EuaVXHAHt4ArJviT7PUSLOR1Lz8UxhaEfN+GkD8EhN7ox7A/l6pxLqP2i7Z+3vamauon8o9Wy/5UjfHce3zuRqHuYO5moJdkHHSdQkeIA6exdd701PS6oX8kteOaX6miqLurl3vWWnYK3z37vB+lKsc+4qiPzmu9kGfvycruT4QMkCMyPfs8H6h0JH+apyLf6G3etgN66r4fCpiu2/gLFXoHve8sHnEoeuq68qkAtoF3JBugZc/Fp/nlzDvt5jk+kPm1YUAIxRaEvrzuH4887xEX+11LjQf7WCqqzW/dKks3vydE1/8D&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+											
+                                            
+                                            <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+											
+											<div>
+       
+        
+        
+        <p>VCC: <input type="number" ng-model="num1" ng-click="sumar()" ng-keyup="sumar()"></p>
+        <p>V BE: <input type="number" ng-model="num2" ng-click="sumar()" ng-keyup="sumar()"></p>
+        <p>RB : <input type="number" ng-model="num3" ng-click="sumar()" ng-keyup="sumar()"></p>
+        <p>RC : <input type="number" ng-model="num5" ng-click="sumar()" ng-keyup="sumar()"></p>
+        
+        <p>β : <input type="number" ng-model="num4" ng-click="sumar()" ng-keyup="sumar()"></p>
+        
+       
+        
+        
+    </div>
+                                   
+     <script type="text/javascript">
+        
+    var miApp=angular.module('MetContro',[]);
+   
+    miApp.controller('MC',function($scope){
+                 
+        $scope.num1=0;         
+        $scope.num2=0; 
+        $scope.num3=0;
+        $scope.num4=0;
+        $scope.num5=0;
+        $scope.conducesi='SI';
+        $scope.conduceno='NO';
+        
+        
+        $scope.sumar=function()
+        {
+                    
+           
+            
+                        
+                $scope.ibase=($scope.num1-$scope.num2)/$scope.num3;
+                
+                
+                $scope.icolector=$scope.num4*$scope.ibase;
+            
+            
+                $scope.iemisor=($scope.num4+1)*$scope.ibase;
+                
+                                
+                $scope.vce=$scope.num1-$scope.icolector*$scope.num5;
+                        
+          
+             
+            
+        
+           // $scope.sig="+";
+           
+           // $scope.res=$scope.resultado;
+            
+        }
+        
+     
+         
+    });
+        
+    </script>
+                                    
+                                    
+										</article>
+										<article >
+											<h4>Resultados</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>I Base</th>
+																	<th>I Colector</th>
+																	<th>I Emisor</th>
+																	<th>V CE</th>
+																	
+																
+																</tr>
+															</thead>
+															<tbody>
+																
+																<tr>
+																	<td>{{ibase | number:5}}</td>
+																	<td>{{icolector | number:5}} </td>
+																	
+																	<td>{{iemisor | number:5}} </td>
+																	<td>{{vce | number:5}} V</td>
+																	
+																	
+																</tr>
+																
+															</tbody>
+															
+														</table>
+													</div>
+													
+																											
+																							
+													
+													
+																										
+													
+													
+										</article>
+										
+										
+									
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>CIRCUITOS</h2>
+									</header>
+									<ul>
+										<li ><a href="index.html" class="icon fa fa-diamond"> Homepage</a></li>
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond"> Básicos </a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												<section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/index.jpg" alt="" /></a>
+											<p>Conducción del diodo</p>
+										</article>
+										
+									</div>
+									
+								            </section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Diodos</a></span>
+											<ul> 
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="diodo24.html" class="image"><img src="images/diodo24.jpg" alt="" /></a>
+											<p>Diodo y Resistencia</p>
+										</article>
+										<article>
+											<a href="diodo210.html" class="image"><img src="images/diodo210.jpg" alt="" /></a>
+											<p>diodos en paralelo </p>
+										</article>
+										<article>
+											<a href="didodo213.html" class="image"><img src="images/diodo213.jpg" alt="" /></a>
+											<p>Analisis de corrientes </p>
+										</article>
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Sujetadores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="sujetador1.html" class="image"><img src="images/sujetador1.jpg" alt="" /></a>
+											<p>Sujetador 1</p>
+										</article>
+										<article>
+											<a href="sujetador2.html" class="image"><img src="images/sujetador2.jpg" alt="" /></a>
+											<p>Sujetador 2 </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Recortadores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="recortador1.html" class="image"><img src="images/recortador1.jpg" alt="" /></a>
+											<p>Recortador simple</p>
+										</article>
+										<article>
+											<a href="recortador2.html" class="image"><img src="images/recortador2.jpg" alt="" /></a>
+											<p>recortador con fuente dc </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Transistores</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="transistor1.html" class="image"><img src="images/transistor1.jpg" alt="" /></a>
+											<p>polarizacion fija </p>
+										</article>
+										<article>
+											<a href="transistor2.html" class="image"><img src="images/transistor2.jpg" alt="" /></a>
+											<p>polarizacion emisor </p>
+										</article>
+										<article>
+											<a href="transistor3.html" class="image"><img src="images/transistor3.jpg" alt="" /></a>
+											<p>Divisor de voltaje</p>
+										</article>
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+										<li>
+											<span class="opener"><a class="icon fa fa-diamond">Amplificadores Op.</a></span>
+											<ul>
+												
+												
+												<li>
+												    
+												    <section>
+									
+									<div class="mini-posts">
+										<article>
+											<a href="sumador.html" class="image"><img src="images/sumador.jpg" alt="" /></a>
+											<p>sumador </p>
+										</article>
+										<article>
+											<a href="restador.html" class="image"><img src="images/restador.jpg" alt="" /></a>
+											<p>restador </p>
+										</article>
+										
+									</div>
+									
+								</section>
+
+												    
+												</li>
+											</ul>
+											
+										</li>
+										
+										
+					
+										
+										
+									</ul>
+								</nav>
+
+							
+
+							
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; UDLA. All rights reserved.  Design: HTML5.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
